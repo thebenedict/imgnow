@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <style>
+      body {
+        min-width: 357px;
+        overflow-x: hidden;
+      }
+
+      img {
+        margin: 5px;
+        border: 2px solid black;
+        vertical-align: middle;
+        width: 75px;
+        height: 75px;
+      }
+
+      .inline {
+        display: inline-block;
+        margin-right: 5px;
+      }
+
+      #error {
+        font-family: sans-serif;
+        color: indianred;
+        margin: 5px;
+        font-size: 0.8em;
+      }
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
+     -->
+    <script src="popup.js"></script>
+    <script src="jquery-2.1.0.min.js"></script>
+  </head>
+  <body>
+    <div>
+      <div class="inline"><input id="query"></input></div>
+      <div class="inline"><input id="short-url"></input></div>
+    </div>
+    <div id="error"></div>
+  </body>
+</html>
+
